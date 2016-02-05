@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Reminder beta 3</string>
     <string name="search_title">Search</string>
+    <string name="menu_item_notify">Напоминания</string>
+    <string name="fr_exam_hello">Hello wolrd!</string>
+    <string name="tab_action_open">Open</string>
+    <string name="tab_action_close">Close</string>
 </resources>
