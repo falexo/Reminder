@@ -1,8 +1,8 @@
 package com.falexo.reminder.app.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,18 +11,26 @@ import com.falexo.reminder.app.R;
 /**
  * Created by newman on 05.02.2016.
  */
-public class ExamFragment extends Fragment {
-
+public class IdeasFragment extends AbstractTabFraments {
     private static final int LAYOUT = R.layout.fragment_exam;
-    private View view;
 
-    public static ExamFragment getInstance() {
+
+    public static IdeasFragment getInstance(Context context) {
         Bundle args = new Bundle();
-        ExamFragment fragment = new ExamFragment();
+        IdeasFragment fragment = new IdeasFragment();
         fragment.setArguments(args);
-
+        fragment.setContext(context);
+        fragment.setTitle(context.getString(R.string.tab_item_ideas));
         return fragment;
     }
+
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
+//    public void setTitle(String title) {
+//        this.title = title;
+//    }
 
     @Nullable
     @Override

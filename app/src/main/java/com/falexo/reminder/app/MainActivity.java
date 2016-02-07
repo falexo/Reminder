@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initTabs() {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
-        TabPagerFragmentAdapter adapter = new TabPagerFragmentAdapter(getSupportFragmentManager());
+        TabPagerFragmentAdapter adapter = new TabPagerFragmentAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
@@ -77,6 +77,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showNotifyTab (){
-        viewPager.setCurrentItem(Constants.TAB2);
+        viewPager.setCurrentItem(Constants.TAB1);
     }
 }

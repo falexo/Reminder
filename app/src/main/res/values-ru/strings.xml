@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Напоминатель бета 4</string>
+    <string name="search_title">Поиск</string>
+    <string name="fr_exam_hello">Привет мир!</string>
+    <string name="tab_action_open">Открыть</string>
+    <string name="tab_action_close">Закрыть</string>
+    <string name="menu_item_notify">История</string>
+    <string name="tab_item_history">История</string>
+    <string name="tab_item_ideas">Идеи</string>
+    <string name="tab_item_todo">Планы</string>
+    <string name="tab_item_birthdays">Дни рождения</string>
+</resources>
